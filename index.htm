@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* Add some basic styling to the page */
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		h1 {
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+		table {
+			margin: 0 auto;
+			border-collapse: collapse;
+			width: 50%;
+		}
+		table, th, td {
+			border: 1px solid black;
+		}
+		th, td {
+			padding: 10px;
+			text-align: center;
+		}
+		input[type="number"] {
+			padding: 5px;
+			margin: 5px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+		input[type="submit"] {
+			padding: 10px 20px;
+			margin: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form>
+		<table>
+			<tr>
+				<th>Operation</th>
+				<th>Number 1</th>
+				<th>Number 2</th>
+			</tr>
+			<tr>
+				<td>
+					<label><input type="radio" name="operation" value="add" checked> Add</label><br>
+					<label><input type="radio" name="operation" value="subtract"> Subtract</label><br>
+					<label><input type="radio" name="operation" value="multiply"> Multiply</label><br>
+					<label><input type="radio" name="operation" value="divide"> Divide</label><br>
+				</td>
+				<td><input type="number" name="num1" required></td>
+				<td><input type="number" name="num2" required></td>
+			</tr>
+		</table>
+		<input type="submit" value="Calculate">
+	</form>
+	<br>
+	<form>
+		<input type="hidden" name="game" value="true">
+		<input type="submit" value="Play Game">
+	</form>
+</body>
+</html>
